@@ -1,8 +1,8 @@
-# 2028
+# Sudoku
 
-![2048](./2048.jpg)
+![Sudoku](./sudoku.png)
 
-Simple implementation of 2048 in NodeJS (TypeScript).
+Simple implementation of Sudoku in NodeJS (TypeScript).
 
 Running in console:
 
@@ -15,4 +15,10 @@ Running in console:
 
 ## How to play
 
-Use ⬅️ ⬆️ ⬇️ ➡️ to move.
+- Use ⬅️ ⬆️ ⬇️ ➡️ to move the cursor
+- Use number `1-9` to fill the cell
+- Use `space` to clear the cell
+- Use `Ctrl + C` to exit the game
+
+## Cheat sheet
+- Use  `s` to run auto solver
