@@ -5,30 +5,30 @@ import { ISudokuSolver } from '../interfaces/solver.interface';
 import { SudokuSolver } from './solver';
 
 export class SudokuGame implements IGame {
-  board: number[][] = []; // Board size is 9x9
-  rows: number = 9;
-  cols: number = 9;
-  LEVELS: { [key: number]: number } = {
+  private board: number[][] = []; // Board size is 9x9
+  private rows: number = 9;
+  private cols: number = 9;
+  private LEVELS: { [key: number]: number } = {
     1: 35,
     2: 35,
     3: 25,
   };
-  LOGO: string = `
+  private LOGO: string = `
  ___  __  __  ____  _____  _  _  __  __ 
  / __)(  )(  )(  _ \(  _  )( )/ )(  )(  )
  \__ \ )(__)(  )(_) ))(_)(  )  (  )(__)( 
  (___/(______)(____/(_____)(_)\_)(______)       
   `;
 
-  prompt = require('prompt-sync')();
-  level: number = 1; // Level easy: 35 numbers
-  startTimestamp: number = 0;
-  timerInterval: any;
-  solverInterval: any;
-  TIMER_INTERVAL = 1000;
-  SOLVER_INTERVAL = 100;
-  cursor: number[] = [0, 0];
-  solver?: ISudokuSolver;
+  private prompt = require('prompt-sync')();
+  private level: number = 1; // Level easy: 35 numbers
+  private startTimestamp: number = 0;
+  private timerInterval: any;
+  private solverInterval: any;
+  private TIMER_INTERVAL = 1000;
+  private SOLVER_INTERVAL = 100;
+  private cursor: number[] = [0, 0];
+  private solver?: ISudokuSolver;
 
   constructor(
     private readonly drawer: ISudokuDrawer,

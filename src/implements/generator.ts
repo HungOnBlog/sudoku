@@ -1,8 +1,8 @@
 import { ISudokuBoardGenerator } from '../interfaces/board-generator.interface';
 
 export class SudokuBoardGenerator implements ISudokuBoardGenerator {
-  NUMBERS: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  board: number[][] = [];
+  private NUMBERS: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  private board: number[][] = [];
 
   constructor() {
     this.board = Array.from(Array(9), () => new Array(9).fill(0));

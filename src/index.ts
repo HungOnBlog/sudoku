@@ -1,9 +1,10 @@
-import { Game2048Drawer } from './implements/drawer';
-import { Game2048 } from './implements/game';
+import { SudokuDrawer } from './implements/drawer';
+import { SudokuGame } from './implements/game';
+import { SudokuBoardGenerator } from './implements/generator';
 
 function main() {
-  const game2048 = new Game2048(new Game2048Drawer());
-  game2048.start();
+  const sudoku = new SudokuGame(new SudokuDrawer(), new SudokuBoardGenerator());
+  sudoku.start();
 }
 
 main();

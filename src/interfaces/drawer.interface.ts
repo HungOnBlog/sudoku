@@ -1,5 +1,5 @@
 export interface ISudokuDrawer {
-  draw(boards: number[][], seconds: number, cursor: number[]): void;
-  drawWin(boards: number[][], seconds: number, cursor: number[]): void;
-  drawLose(boards: number[][], seconds: number, cursor: number[]): void;
+  draw(board: number[][], seconds: number, cursor: number[]): void;
+  drawWin(board: number[][], seconds: number, cursor: number[]): void;
+  drawLose(board: number[][], seconds: number, cursor: number[]): void;
 }

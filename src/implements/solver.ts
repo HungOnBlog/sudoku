@@ -4,11 +4,11 @@ import { ISudokuSolver } from '../interfaces/solver.interface';
  * Classic Sudoku solver using Backtracking Algorithm.
  */
 export class SudokuSolver implements ISudokuSolver {
-  board: number[][];
-  steps: number[][];
-  startNum: number = 1;
-  canPlace: boolean = true;
-  firstStepSquareMissing: number[] = [];
+  private board: number[][];
+  private steps: number[][];
+  private startNum: number = 1;
+  private canPlace: boolean = true;
+  private firstStepSquareMissing: number[] = [];
 
   constructor(board: number[][]) {
     this.board = [...board];
