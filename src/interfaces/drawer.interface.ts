@@ -1,5 +1,5 @@
-export interface I2048Drawer {
-  draw(boards: number[][], scores: number, numberOfMoves: number): void;
-  drawLost(boards: number[][], scores: number, numberOfMoves: number): void;
-  drawWin(boards: number[][], scores: number, numberOfMoves: number): void;
+export interface ISudokuDrawer {
+  draw(boards: number[][], seconds: number, cursor: number[]): void;
+  drawWin(boards: number[][], seconds: number, cursor: number[]): void;
+  drawLose(boards: number[][], seconds: number, cursor: number[]): void;
 }
